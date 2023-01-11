@@ -18,7 +18,7 @@ services:
     ports:
     - 8080:8080
     volumes:
-    - C:\DevopsProject\jenkins:/etc/jenkins
+    - C:\DevopsProject\jenkins:/var/jenkins_home
 #  cassandra:
 #    container_name: cassandra
 #    image: cassandra:4.0
