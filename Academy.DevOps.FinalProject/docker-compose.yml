@@ -1,0 +1,54 @@
+version: '3.4'
+
+services:
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+    - 4444:4444
+    - 7900:7900
+  tomcat:
+    image: tomcat
+    ports:
+    - 8888:8888
+    - 8081:8080
+    volumes:
+    - C:\DevopsProject\tomcat\webapps:/usr/local/tomcat/webapps
+  jenkins:
+    image: jenkins/jenkins
+    ports:
+    - 8080:8080
+    volumes:
+    - C:\DevopsProject\jenkins:/etc/jenkins
+#  cassandra:
+#    container_name: cassandra
+#    image: cassandra:4.0
+#    environment:
+#      - CASSANDRA_CLUSTER_NAME=FrontLine
+#    volumes:
+#      - C:\DevopsProject\gatling\cassandra:/var/lib/cassandra
+#    networks:
+#      - frontline-network
+#    healthcheck:
+#      test: ["CMD-SHELL", "[ $$(nodetool statusgossip) = running ]"]
+#      interval: 30s
+#      timeout: 10s
+#      retries: 10
+#  frontline:
+#    container_name: frontline
+#    image: gatlingcorp/frontline:1.18.0
+#    ports:
+#      - 10542:10542
+#    networks:
+#      - frontline-network
+#    environment:
+#      - FRONTLINE_CASSANDRA_HOST=cassandra
+#      - FRONTLINE_ENABLE_LOCAL_POOL=true
+#    volumes:
+#      - C:\DevopsProject\gatling\frontline-conf:/opt/frontline/conf
+#      - C:\DevopsProject\gatling\frontline-keys:/opt/frontline/keys
+#    depends_on:
+#      cassandra:
+#        condition: service_healthy
+#networks:
+#  frontline-network:
+#    driver: bridge
