@@ -1,0 +1,3 @@
+[submodule "Academy.DevOps.FinalProject.ClientApplication"]
+	path = Academy.DevOps.FinalProject.ClientApplication
+	url = https://github.com/IgalKF/Academy.DevOps.FinalProject.ClientApplication.git
