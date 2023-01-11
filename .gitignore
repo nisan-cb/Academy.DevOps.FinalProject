@@ -20,6 +20,8 @@
 .vscode
 */bin
 */obj
+*/.vs
+Academy.DevOps.FinalProject/.vs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
