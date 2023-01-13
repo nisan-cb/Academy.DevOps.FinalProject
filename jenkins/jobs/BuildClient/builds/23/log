@@ -1,0 +1,54 @@
+Started by upstream project "[8mha:////4DaRXbJrwopkp8cLsfRYKbgM2v0VaAn4dgr04GmGH4rFAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2A0pwc55zM1LwSfQBec9ehxQAAAA==[0mPullClient" build number [8mha:////4IJUodHmpgAStU71PzmRsF97y8GEeHKPRiEuYcUW55c7AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/YDSnBznnMzUvBJ9EwDMjXrOxgAAAA==[0m4
+originally caused by:
+ Started by user [8mha:////4EQhDvTOCdiaP0OvoT42amVSe4DyBUQ7OxtZrUJO3F2EAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/PullClient
+[PullClient] $ /bin/sh -xe /tmp/jenkins13075694112320023369.sh
++ ls
+build
+node_modules
+package-lock.json
+package.json
+public
+src
+tsconfig.json
++ npm install
+
+up to date, audited 1452 packages in 10s
+
+231 packages are looking for funding
+  run `npm fund` for details
+
+6 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
++ npm run build
+
+> client-application@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+
+Treating warnings as errors because process.env.CI = true.
+Most CI servers set it automatically.
+
+Failed to compile.
+
+[eslint] 
+src/App.tsx
+  Line 1:10:  'createRef' is defined but never used             @typescript-eslint/no-unused-vars
+  Line 8:10:  'textChanged' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/ui-components/input-indicator.tsx
+  Line 1:25:  'MutableRefObject' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/ui-components/text-area.tsx
+  Line 1:49:  'MutableRefObject' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 1:67:  'RefObject' is defined but never used         @typescript-eslint/no-unused-vars
+
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,10 @@
+commit eed36bcc95be38027d64c20096c6aa6423b9de00
+tree 6ccaa4e7a2be6975f7b2ed35738b4e1704fcaedd
+parent d6f4b85a2d9a4e080d393e59b7f17e667d2c0e3e
+author Igal Khalfin <Igal.Khalfin@projectverte.com> 2023-01-13 14:25:53 +0200
+committer Igal Khalfin <Igal.Khalfin@projectverte.com> 2023-01-13 14:25:53 +0200
+
+    Hotfix
+
+
+:100644 100644 9d5c42c86e96d48917528ef49905a746a3e4256e 43a5ee1de2afcdb81eb37176f7c1517293d4cd91 M	src/ui-components/input-indicator.tsx

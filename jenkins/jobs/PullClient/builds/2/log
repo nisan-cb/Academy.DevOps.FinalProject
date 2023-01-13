@@ -1,0 +1,19 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/PullClient
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/PullClient/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/IgalKF/Academy.DevOps.FinalProject.ClientApplication.git # timeout=10
+Fetching upstream changes from https://github.com/IgalKF/Academy.DevOps.FinalProject.ClientApplication.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/IgalKF/Academy.DevOps.FinalProject.ClientApplication.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision eed36bcc95be38027d64c20096c6aa6423b9de00 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f eed36bcc95be38027d64c20096c6aa6423b9de00 # timeout=10
+Commit message: "Hotfix"
+ > git rev-list --no-walk d6f4b85a2d9a4e080d393e59b7f17e667d2c0e3e # timeout=10
+Finished: SUCCESS

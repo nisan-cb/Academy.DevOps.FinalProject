@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/IgalNisanDanielNissim/static/css/main.073c9b0a.css",
+    "main.js": "/IgalNisanDanielNissim/static/js/main.18e8879c.js",
+    "static/js/787.9a35b04d.chunk.js": "/IgalNisanDanielNissim/static/js/787.9a35b04d.chunk.js",
+    "index.html": "/IgalNisanDanielNissim/index.html",
+    "main.073c9b0a.css.map": "/IgalNisanDanielNissim/static/css/main.073c9b0a.css.map",
+    "main.18e8879c.js.map": "/IgalNisanDanielNissim/static/js/main.18e8879c.js.map",
+    "787.9a35b04d.chunk.js.map": "/IgalNisanDanielNissim/static/js/787.9a35b04d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.18e8879c.js"
+  ]
+}

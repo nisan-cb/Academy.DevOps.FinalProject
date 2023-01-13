@@ -1,0 +1,10 @@
+commit 44f318e0f8bd29e09a367d011ff9c0f768cf4a4e
+tree ca70a60042a87165dd0ba3771fbe3877eb83deec
+parent eed36bcc95be38027d64c20096c6aa6423b9de00
+author Igal Khalfin <Igal.Khalfin@projectverte.com> 2023-01-13 16:07:10 +0200
+committer Igal Khalfin <Igal.Khalfin@projectverte.com> 2023-01-13 16:07:10 +0200
+
+    packege.json update
+
+
+:100644 100644 4f907896ab3d7068fd31915ef395c40473bd39ea f33702d24a2470a7f4e5ac68523755a772825a7d M	package.json

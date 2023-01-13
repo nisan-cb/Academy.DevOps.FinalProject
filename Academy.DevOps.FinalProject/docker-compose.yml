@@ -12,13 +12,14 @@ services:
     - 8888:8888
     - 8081:8080
     volumes:
-    - C:\DevopsProject\tomcat\webapps:/usr/local/tomcat/webapps
+    - ..\tomcat\webapps:/usr/local/tomcat/webapps
   jenkins:
     image: jenkins/jenkins
     ports:
     - 8080:8080
     volumes:
-    - C:\DevopsProject\jenkins:/var/jenkins_home
+    - ..\jenkins:/var/jenkins_home
+    - ..\tomcat\webapps\IgalNisanDanielNissim:/var/jenkins_home/workspace/PullClient/build
 #  cassandra:
 #    container_name: cassandra
 #    image: cassandra:4.0
