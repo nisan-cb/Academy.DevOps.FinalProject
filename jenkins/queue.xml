@@ -1,6 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <hudson.model.Queue_-State>
-  <counter>32</counter>
+  <counter>39</counter>
   <items>
     <hudson.model.Queue_-WaitingItem>
       <actions>
@@ -8,7 +8,7 @@
           <causeBag class="linked-hash-map">
             <entry>
               <hudson.triggers.SCMTrigger_-SCMTriggerCause>
-                <pollingLog>Started on Jan 16, 2023, 7:13:00 PM
+                <pollingLog>Started on Jan 16, 2023, 7:20:00 PM
 Using strategy: Default
 [poll] Last Built Revision: Revision 44f318e0f8bd29e09a367d011ff9c0f768cf4a4e (refs/remotes/origin/main)
 The recommended git tool is: NONE
@@ -18,7 +18,7 @@ No credentials specified
  &gt; git ls-remote -h -- https://github.com/IgalKF/Academy.DevOps.FinalProject.ClientApplication.git # timeout=10
 Found 1 remote heads on https://github.com/IgalKF/Academy.DevOps.FinalProject.ClientApplication.git
 [poll] Latest remote head revision on refs/heads/main is: 7c5530e16f0ffe03ee70d7e87d2365f532e36a72
-Done. Took 0.83 sec
+Done. Took 0.81 sec
 Changes found
 </pollingLog>
               </hudson.triggers.SCMTrigger_-SCMTriggerCause>
@@ -27,11 +27,11 @@ Changes found
           </causeBag>
         </hudson.model.CauseAction>
       </actions>
-      <id>32</id>
+      <id>39</id>
       <task class="hudson.model.FreeStyleProject">PullClient</task>
-      <inQueueSince>1673896380984</inQueueSince>
+      <inQueueSince>1673896800961</inQueueSince>
       <timestamp>
-        <time>1673896385984</time>
+        <time>1673896805961</time>
         <timezone>Etc/UTC</timezone>
       </timestamp>
     </hudson.model.Queue_-WaitingItem>
