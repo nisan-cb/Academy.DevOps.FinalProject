@@ -1,0 +1,19 @@
+Started by user [8mha:////4EQhDvTOCdiaP0OvoT42amVSe4DyBUQ7OxtZrUJO3F2EAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/PullClient
+[PullClient] $ /bin/sh -xe /tmp/jenkins6733065845408451252.sh
++ ls
+build
++ npm install
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path /var/jenkins_home/workspace/PullClient/package.json
+npm ERR! errno -2
+npm ERR! enoent ENOENT: no such file or directory, open '/var/jenkins_home/workspace/PullClient/package.json'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /var/jenkins_home/.npm/_logs/2023-01-16T19_34_11_481Z-debug-0.log
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
