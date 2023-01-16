@@ -15,6 +15,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>ls
+pwd
 npm install
 npm run build</command>
       <configuredLocalRules/>
