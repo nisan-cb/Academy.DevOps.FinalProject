@@ -22,7 +22,11 @@
         <artifactId>gatling-maven-plugin</artifactId>
         <version>3.0.5</version>
         <configuration>
-            <simulationClass>gatling.simulationClass</simulationClass>
+            <configFolder>src/test/resources</configFolder>
+            <dataFolder>src/test/resources/data</dataFolder>
+            <resultsFolder>target/gatling/results</resultsFolder>
+            <bodiesFolder>src/test/resources/bodies</bodiesFolder>
+            <simulationsFolder>src/test/scala</simulationsFolder>
         </configuration>
     </plugin>
 </build>
