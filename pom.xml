@@ -15,10 +15,10 @@
 </dependency>
 
 <plugin>
-    <groupId>i.gatling</groupId>
+    <groupId>io.gatling</groupId>
     <artifactId>gatling-maven-plugin</artifactId>
     <version>3.0.5</version>
     <configuration>
-        <simulationClasstest.scala</simulationClass>
+        <simulationClass>*test.scala</simulationClass>
     </configuration>
 </plugin>
