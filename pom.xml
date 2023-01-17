@@ -22,7 +22,7 @@
         <artifactId>gatling-maven-plugin</artifactId>
         <version>3.0.5</version>
         <configuration>
-            <simulationClass>*test.scala</simulationClass>
+            <simulationClass>gatling.simulationClass</simulationClass>
         </configuration>
     </plugin>
 </build>
