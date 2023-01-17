@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Run Gatling") {
             steps {
-                sh 'mvn gatling:test -Dgatling.simulationClass=test.scala -Dgatling.outputDirectory=./report'
+                sh 'mvn gatling -Dgatling.simulationClass=test.scala -Dgatling.outputDirectory=./report'
             }
             post {
                 always {
