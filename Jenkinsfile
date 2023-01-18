@@ -25,7 +25,7 @@ pipeline {
         stage("Build Maven") {
             steps {
                 echo 'Build Maven  '
-                sh 'mvn -B clean package'
+                mvn -B clean package
             }
         }
         stage("Run Gatling") {
