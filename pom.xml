@@ -20,7 +20,7 @@
     <plugin>
         <groupId>io.gatling</groupId>
         <artifactId>gatling-maven-plugin</artifactId>
-        <version>3.0.5</version>
+        <version>4.2.9</version>
         <configuration>
             <configFolder>src/test/resources</configFolder>
             <dataFolder>src/test/resources/data</dataFolder>
