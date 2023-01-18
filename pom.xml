@@ -21,12 +21,5 @@
         <groupId>io.gatling</groupId>
         <artifactId>gatling-maven-plugin</artifactId>
         <version>4.2.9</version>
-        <configuration>
-            <configFolder>src/test/resources</configFolder>
-            <dataFolder>src/test/resources/data</dataFolder>
-            <resultsFolder>target/gatling/results</resultsFolder>
-            <bodiesFolder>src/test/resources/bodies</bodiesFolder>
-            <simulationsFolder>src/test/scala</simulationsFolder>
-        </configuration>
     </plugin>
 </build>
