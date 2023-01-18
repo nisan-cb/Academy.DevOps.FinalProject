@@ -1,43 +1,43 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-}
 // pipeline {
 //     agent any
+
 //     stages {
-//         stage("Build Maven") {
+//         stage('Build') {
 //             steps {
-//                 echo 'Build Maven  '
-//                 sh 'mvn -B clean package'
+//                 echo 'Building..'
 //             }
 //         }
-//         stage("Run Gatling") {
+//         stage('Test') {
 //             steps {
-//                 sh 'echo run gatling'
-//                 sh 'mvn gatling:test'
+//                 echo 'Testing..'
 //             }
-//             post {
-//                 always {
-//                     gatlingArchive()
-//                 }
+//         }
+//         stage('Deploy') {
+//             steps {
+//                 echo 'Deploying....'
 //             }
 //         }
 //     }
 // }
+pipeline {
+    agent any
+    stages {
+        stage("Build Maven") {
+            steps {
+                echo 'Build Maven  '
+                sh 'mvn -B clean package'
+            }
+        }
+        stage("Run Gatling") {
+            steps {
+                sh 'echo run gatling'
+                sh 'mvn gatling:test'
+            }
+            post {
+                always {
+                    gatlingArchive()
+                }
+            }
+        }
+    }
+}
