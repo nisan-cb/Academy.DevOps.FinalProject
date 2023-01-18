@@ -9,6 +9,7 @@ pipeline {
         }
         stage("Run Gatling") {
             steps {
+                sh 'echo run gatling'
                 sh 'mvn gatling:test'
             }
             post {
