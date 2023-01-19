@@ -22,8 +22,8 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven'
         jdk 'JDK'
+        maven 'Maven'
     }
     stages {
         stage("Build Maven") {
