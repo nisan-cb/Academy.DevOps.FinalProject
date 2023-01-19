@@ -30,13 +30,13 @@ pipeline {
             steps{
                     echo 'Build Maven  '
                     sh 'mvn --version'
-                    sh 'mvn package'
+                    sh 'mvn -B clean package'
             }
         }
         stage("Run Gatling") {
             steps {
                 sh 'echo run gatling'
-                sh 'mvn gatling:test'
+                sh 'mvn gatling:test -Dgatling.simulationClass=test.Home_Page'
             }
             post {
                 always {
