@@ -23,7 +23,7 @@ pipeline {
     agent any
     stages {
         stage("Build Maven") {
-            step{
+            steps{
                 withMaven(maven: 'mvn') {
                     echo 'Build Maven  '
                     sh 'mvn --version'
