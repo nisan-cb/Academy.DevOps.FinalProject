@@ -36,7 +36,7 @@ pipeline {
         stage("Run Gatling") {
             steps {
                 sh 'echo run gatling'
-                sh 'mvn gatling:test -Dgatling.simulationClass=test.Home_Page'
+                sh 'mvn gatling:test -Dgatling.simulationClass=test'
             }
             post {
                 always {
