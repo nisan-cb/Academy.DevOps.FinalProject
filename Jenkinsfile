@@ -23,10 +23,12 @@ pipeline {
     agent any
     stages {
         stage("Build Maven") {
-            withMaven(maven: 'mvn') {
-                echo 'Build Maven  '
-                sh 'mvn --version'
-                sh 'mvn package'
+            step{
+                withMaven(maven: 'mvn') {
+                    echo 'Build Maven  '
+                    sh 'mvn --version'
+                    sh 'mvn package'
+                }
             }
         }
         stage("Run Gatling") {
