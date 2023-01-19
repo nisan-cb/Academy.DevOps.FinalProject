@@ -28,11 +28,9 @@ pipeline {
     stages {
         stage("Build Maven") {
             steps{
-                withMaven(maven: 'mvn') {
                     echo 'Build Maven  '
                     sh 'mvn --version'
                     sh 'mvn package'
-                }
             }
         }
         stage("Run Gatling") {
